@@ -12,7 +12,8 @@
     "compile:js": "babili src -d dist",
     "compile:css": "uglifycss src/style.css > dist/style.css",
     "compile:html": "html-minifier src/index.html > dist/index.min.html",
-    "start": "http-server ./dist -g"
+    "start": "http-server ./dist -g",
+    "test": "[[ $(find ./dist/index.html.gz -type f -size +13000c 2>/dev/null) ]] && echo 'File too large' && exit 1 || exit 0"
   },
   "dependencies": {
     "babili": "^0.1.4",
