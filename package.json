@@ -1,0 +1,10 @@
+{
+  "name": "js13k",
+  "version": "0.1.0",
+  "main": "dist/index.html",
+  "author": "Marco <msegreto@miceover.com>",
+  "license": "MIT",
+  "dependencies": {
+    "static-server": "^2.0.5"
+  }
+}
